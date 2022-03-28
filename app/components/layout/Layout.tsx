@@ -18,7 +18,7 @@ const Layout: FC<ILayout> = ({ children, title }) => {
 
     const timeout = setTimeout(() => {
       setIsLoading(false);
-    }, 4000);
+    }, 1500);
 
     return () => {
       clearTimeout(timeout);
@@ -36,10 +36,7 @@ const Layout: FC<ILayout> = ({ children, title }) => {
         strategy="beforeInteractive"
         src={`https://maps.googleapis.com/maps/api/js?key=${process.env.MAP_KEY}&libraries=places`}
       />
-      <div
-        style={{ maxWidth: 480 }}
-        className="mx-auto relative overflow-hidden"
-      >
+      <div className="mx-auto relative overflow-hidden">
         {isLoading ? <Loader /> : children}
       </div>
     </div>

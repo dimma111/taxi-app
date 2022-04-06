@@ -1,5 +1,6 @@
 # About project
 Simple taxi app with using yandex map API.
+
 ![image](https://user-images.githubusercontent.com/45338397/161949869-b2004636-aa91-4dda-99e2-2aa77fbbfd7a.png)
 
 ## Stack

@@ -8,6 +8,16 @@ Simple taxi app with using yandex map API.
 2. React-yandex-maps
 3. React-spinners-kit
 
+## How use?
+1. You need yandex api key, create in root project dir file cfg.js with the following content:
+```
+const data = {
+  apiKey: 'your api key',
+};
+export default data;
+```
+2. ...
+
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

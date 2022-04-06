@@ -56,3 +56,28 @@ a {
 .hide-scroll-bar::-webkit-scrollbar {
   display: none;
 }
+
+ymaps[class*="search__suggest "] {
+  transform: translateY(20px);
+  width: inherit;
+}
+
+.low-transition {
+  animation: slideUp 2s normal forwards ease-in-out;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+@keyframes slideUp {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: 105px;
+    opacity: 1;
+  }
+}
